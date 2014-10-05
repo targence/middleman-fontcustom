@@ -2,11 +2,11 @@ require 'fontcustom'
 
 module Middleman
   class FontcustomExtension < Extension
-    option :font_name, 'fontcustom', 'Output font name'
-    option :source_dir, 'assets/fontcustom', 'Folder contains icon files'
-    option :fonts_dir, 'source/fonts', 'Folder to output fonts'
-    option :css_dir, 'source/stylesheets', 'Folder to output css'
-    option :templates, 'scss', 'Output templates'
+    option :font_name, 'icons', 'Output font name'
+    option :source_dir, 'static/source/icons', 'Folder contains icon files'
+    option :fonts_dir, 'static/source/fonts', 'Folder to output fonts'
+    option :css_dir, 'static/source/stylesheets', 'Folder to output css'
+    option :templates, 'css', 'Output templates'
     option :no_hash, true, 'Create hash for no cache policy'
 
     def initialize(app, options_hash={}, &block)
